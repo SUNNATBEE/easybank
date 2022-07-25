@@ -1,0 +1,235 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ROOT */
+:root{
+    --main-font-family: "Public Sans", "Arial", sans-serif;
+    --main-regular-font-weight: 400;
+    --main-body-bg-color: #fafafa;
+    --main-h-text-color: #2d314d;
+    --main-p-text-color: #9597a5;
+    --main-gradient-color: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+    --main-gr-color:#30c88f;
+}
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: 
+    url('../fonts/public-sans-v14-latin-100.woff2') format('woff2'), 
+    url('../fonts/public-sans-v14-latin-100.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: 
+    url('../fonts/public-sans-v14-latin-regular.woff2') format('woff2'), 
+    url('../fonts/public-sans-v14-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: 
+    url('../fonts/public-sans-v14-latin-500.woff2') format('woff2'), 
+    url('../fonts/public-sans-v14-latin-500.woff') format('woff'); 
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+img{
+    display: block;
+    height: 100%;
+}
+
+body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-weight: var(--main-regular-font-weight);
+    background-color: var(--main-body-bg-color);
+}
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 18px 0;
+    background-color: var(--main-body-bg-color);
+}
+
+.site-header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* .logo {
+} */
+
+.logo__img {
+    width: 139px;
+    height: 20px;
+}
+
+.site-header__nav {
+    margin-right: auto;
+    margin-left: 251px;
+}
+
+.site-header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header__item {
+    margin-right: 30px;
+}
+
+.site-header__nav-link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    padding-bottom: 28px;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    color: var(--main-p-text-color);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.site-header__nav-link:hover {
+    color: var(--main-h-text-color);
+    border-block-color: var(--main-gr-color);
+}
+
+.button-link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    padding-top: 8px;
+    padding-right: 36px;
+    padding-bottom: 8px;
+    padding-left: 33px;
+    text-decoration: none;
+    color: #fff;   
+    background: var(--main-gradient-color);
+    border-radius: 22px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.button-link:hover {
+    opacity: 0.4;
+}
+
+.site-main{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.hero-section {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    padding-top: 250px;
+    padding-bottom: 170px;
+    background-image: url("../images/hero-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 610px) calc(50% - 35px);
+    background-size: 1371px 1038px;
+}
+
+.hero-section__textbox {
+    width: 447px;
+    margin-right: auto;
+}
+
+.hero-section__text {
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+    
+    color: var(--main-h-text-color);
+}
+
+.hero-section__description {
+    font-size: 18px;
+    line-height: 28px;
+    
+    margin-top: 0;
+    margin-bottom: 36px;
+    letter-spacing: -0.28125px;
+    
+    color: #9597A5;
+}
+
+.hero-section__bg-box {
+    position: absolute;
+    top: calc(50% - 410px);
+    left: calc(50% + 110px);
+    width: 729px;
+    height: 900px;
+    background-image: url("../images/hero-phones-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.why-choose {
+    padding-top: 304px;
+    padding-bottom: 200px;
+    background-color: #f4f5f7;
+}
